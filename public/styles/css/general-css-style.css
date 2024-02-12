@@ -1,0 +1,104 @@
+@import './partials/_base-token.css';
+@import './partials/_general-token.css';
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+
+body {
+  font-family: var(--font-family), var(--font-family-alternate);
+  margin: 0;
+  padding: 0;
+  font-feature-settings: "ss03";
+  font-variation-settings: "FANU" 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100%;
+  position: relative;
+  overflow-x: hidden;
+  scrollbar-width: 10px;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+.noScroll {
+  overflow: hidden;
+  padding-right: 10px;
+}
+
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px white inset;
+  /* Change the color to your own background color */
+  -webkit-text-fill-color: #333;
+}
+
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 50px white inset;
+  -webkit-text-fill-color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+.en {
+  font-variation-settings: “FANU” 0 !important;
+  font-feature-settings: normal !important;
+}
+
+div:focus-visible {
+  outline: none !important;
+}
+
+label:focus-visible {
+  outline-width: 1px !important;
+  outline-color: var(--gray-600);
+  outline-style: solid;
+  border-radius: var(--border-radius-normal);
+  outline-offset: 0;
+}
+
+.headerLoading {
+  height: 80px;
+}
+
+@media screen and (max-width:899px) {
+  .headerLoading {
+    height: 70px;
+  }
+}
+
+@media screen and (max-width:599px) {
+  .headerLoading {
+    height: 60px;
+  }
+}

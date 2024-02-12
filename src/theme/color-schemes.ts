@@ -1,0 +1,102 @@
+import { ColorSystemOptions, SupportedColorScheme, } from '@mui/material/styles';
+
+const ColorSchemes: Partial<Record<SupportedColorScheme, ColorSystemOptions>> = {
+  light: {
+    palette: {
+      primary: {
+        light: 'var(--primary-light)', 
+        main: 'var(--primary-main)', 
+        dark: 'var(--primary-dark)',
+        contrastText: 'var(--primary-contrast-text)',    
+        lightChannel: 'var(--primary-light)', 
+        mainChannel: 'var(--primary-main)', 
+        darkChannel: 'var(--primary-dark)',
+        contrastTextChannel: 'var(--primary-dark)',
+      }, 
+      secondary: {
+        light: 'var(--secondary-light)', 
+        main: 'var(--secondary-main)', 
+        dark: 'var(--secondary-dark)',
+        contrastText: 'var(--secondary-contrast-text)', 
+        lightChannel: 'var(--secondary-light)', 
+        mainChannel: 'var(--secondary-main)', 
+        darkChannel: 'var(--secondary-dark)', 
+      },
+      info: {
+        light: 'var(--info-light)', 
+        main: 'var(--info-main)', 
+        dark: 'var(--info-dark)',
+        contrastText: 'var(--info-text)', 
+        lightChannel: 'var(--info-light)', 
+        mainChannel: 'var(--info-main)', 
+        darkChannel: 'var(--info-dark)', 
+      },
+      success: {
+        light: 'var(--success-light)', 
+        main: 'var(--success-main)', 
+        dark: 'var(--success-dark)',
+        contrastText: 'var(--success-text)', 
+        lightChannel: 'var(--success-light)', 
+        mainChannel: 'var(--success-main)', 
+        darkChannel: 'var(--success-dark)',
+      },
+      error: {
+        light: 'var(--error-light)', 
+        main: 'var(--error-main)', 
+        dark: 'var(--error-dark)',
+        contrastText: 'var(--error-text)', 
+        lightChannel: 'var(--error-light)', 
+        mainChannel: 'var(--error-main)', 
+        darkChannel: 'var(--error-dark)',
+      },
+      warning: {
+        light: 'var(--warning-light)', 
+        main: 'var(--warning-main)', 
+        dark: 'var(--warning-dark)',
+        contrastText: 'var(--warning-text)',
+      },
+      action: {
+        active: 'var(--action-active)',
+        activeChannel: 'var(--action-active)',
+        hover: 'var(--action-hover)',
+        focus: 'var(--action-focus)',
+        selected: 'var(--action-selected)',
+        selectedChannel: 'var(--action-selected)',
+        disabled: 'var(--action-disabled)',
+        disabledBackground: 'var(--action-disabled-background)',
+      },
+      common: {
+        white: 'var(--white)',
+        black: 'var(--black)',
+      },
+      text: {
+        primary: 'var(--primary-text)',
+        secondary: 'var(--secondary-text)',
+        disabled: 'var(--disabled-text)',
+        primaryChannel: 'var(--primary-text)',
+        secondaryChannel: 'var(--secondary-text)',
+      },
+      background: {
+        default: 'var(--default-background)',
+        defaultChannel: 'var(--default-background)',
+        paper: 'var(--paper-background)',
+      },
+      divider: 'var(--divider)',
+      dividerChannel: 'var(--divider)',
+      grey: {
+        '50': 'var(--gray-50)',
+        '100': 'var(--gray-100)',
+        '200': 'var(--gray-200)',
+        '300': 'var(--gray-300)', 
+        '400': 'var(--gray-400)',
+        '500': 'var(--gray-500)',
+        '600': 'var(--gray-600)',
+        '700': 'var(--gray-700)',
+        '800': 'var(--gray-800)',
+        '900': 'var(--gray-900)',
+      },
+    }, 
+  }, 
+};
+
+export default ColorSchemes;

@@ -1,0 +1,19 @@
+@import "@styles/scss/partials/mixins";
+
+.root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        max-width: var(--max-container-size);
+        padding: 45px var(--spacing-xx-large) var(--spacing-xxx-large);
+        width: 100%;
+        gap: var(--spacing-x-large);
+    }
+}
